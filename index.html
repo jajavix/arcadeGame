@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcade: TicTacToe</title>
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Grandstander:ital,wght@0,100;1,300&family=Permanent+Marker&display=swap" rel="stylesheet">
+    
+    <!--Css-->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!--js-->
+    <script type="text/javascript"defer src="app.js"></script>
+  </head>
+
+  <body>
+    <div>
+    <!--Header-->
+      <h1 class="header">Tic Tac Toe</h1> 
+
+    </div>
+    <!--Instructin area-->
+    <h2>Instruction:</h2>
+      <ul>
+           <li> Each player alternates turns placing their pieces on the board.</li>
+            <li>First player to reach three-in-a-row across, down, or diagonally
+            wins!</li>
+       </ul>
+    <!--input box area-->
+    <div class="enter-players">
+      <form id="player-form">
+        <div class="player-container">
+          <label for="player1">Player 1 </label>
+          <input
+            type="text"
+            placeholder="Enter Name for X"
+            name="player1"
+            id="player1"
+            class="input-field"
+          />
+        </div>
+        <div class="player-container">
+          <label for="player2">Player 2 </label>
+          <input
+            type="text"
+            placeholder="Enter Name for O"
+            name="player2"
+            id="player2"
+            class="input-field"
+           
+          />
+        </div>
+
+        <!--submit form -->
+        <input type="submit" class="startgame-btn" value="Start Game" />
+      </form>
+    </div>
+
+    <!--Gameboard cell-->
+    <!--hidden until Start Game Button is clicked-->
+      <div class="board___player-turn"></div>
+      <div class="board__container">
+        <div class="board__cell">
+          <div class="letter" data-id="0"></div>
+        </div>
+        <div class="board__cell">
+          <div class="letter" data-id="1"></div>
+        </div>
+        <div class="board__cell">
+          <div class="letter" data-id="2"></div>
+        </div>
+
+        <div class="board__cell">
+          <div class="letter" data-id="3"></div>
+        </div>
+        <div class="board__cell">
+          <div class="letter" data-id="4"></div>
+        </div>
+        <div class="board__cell">
+          <div class="letter" data-id="5"></div>
+        </div>
+
+        <div class="board__cell">
+          <div class="letter" data-id="6"></div>
+        </div>
+        <div class="board__cell">
+          <div class="letter" data-id="7"></div>
+        </div>
+        <div class="board__cell">
+          <div class="letter" data-id="8"></div>
+        </div>
+      </div>
+    </div>
+ 
+    
+    <!--hides the board until Start Game is click-->
+    <div class="reset reset--hidden">
+      <div class="reset__text"></div>
+      <button class="clear-btn" value="clear">
+        <span class="clear-board">Clear Board</span>
+      </button>  
+
+      <!--clear and reload window to original setting-->
+     <button class = "reload"><a href="./index.html" >
+		      Reload</button> 
+    </div>
+    
+    </body>
+</html>
+
